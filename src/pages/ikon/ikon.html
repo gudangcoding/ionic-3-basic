@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Icon</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p> 
+     <ion-icon name="home" isActive="true"></ion-icon>
+     Ikon Aktif
+  </p>
+  <p>
+     <ion-icon name="home" isActive="false"></ion-icon>
+     Ikon Tidak Aktif
+  </p>
+  <p>
+     <ion-icon ios="logo-apple" md="logo-android"></ion-icon>
+     Ikon Spesifik Platform
+  </p>
+  <p>
+     <ion-icon [name]="myIcon"></ion-icon>
+     Ikon Variabel
+  </p>
+</ion-content>

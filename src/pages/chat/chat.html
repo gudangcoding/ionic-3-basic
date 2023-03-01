@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Chat</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class='page-chat'>
+  <ion-list no-lines>
+    <ion-item class="chatbox left" text-wrap>
+      <ion-avatar item-left>
+        <img src="assets/nabil.jpg">
+      </ion-avatar>
+      <div class="buble">
+        <b>Annisa Nabil</b>
+        <p>Agar list tidak ada garisnya, tambahkan atribut no-lines pada ion-list</p>
+      </div>
+    </ion-item>
+
+    <ion-item class="chatbox left" text-wrap>
+      <ion-avatar item-left>
+        <img src="assets/daffa.jpg">
+      </ion-avatar>
+      <div class="buble">
+        <b>Daffa Shidqi</b>
+        <p>Jika percakapan yang terdiri lebih dari satu baris, pastikan pada ion-item menambahkan atribut text-wrap</p>
+      </div>
+    </ion-item>
+
+    <ion-item class="chatbox right" text-wrap>
+      <div class="buble">
+        <p>Percakapan sebelah kanan</p>
+      </div>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-textarea placeholder="Chat..."></ion-textarea>
+    <ion-buttons end>
+      <button icon-only ion-button>
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

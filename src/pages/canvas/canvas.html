@@ -1,0 +1,9 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Canvas Corat Coret</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <canvas style="width:100%; height:100%;" #coretan (touchstart)="handleStart($event)" (touchmove)="handleMove($event)"></canvas>
+</ion-content>

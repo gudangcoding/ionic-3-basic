@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Card</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+        Header Card
+    </ion-card-header>
+
+    <ion-card-content>
+        Ini konten card, dapat diisi dengan teks, gambar, atau yang lainya.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+        Explore Nearby
+    </ion-card-header>
+
+    <ion-list>
+      <button ion-item>
+        <ion-icon name='cart' item-left></ion-icon>
+        Shopping
+      </button>
+
+      <button ion-item>
+        <ion-icon name='medical' item-left></ion-icon>
+        Hospital
+      </button>
+
+      <button ion-item>
+        <ion-icon name='cafe' item-left></ion-icon>
+        Cafe
+      </button>
+    </ion-list>
+  </ion-card>
+
+  <ion-card class="bg-image">
+    <img src="assets/masjid.jpg"/>
+    <div class="card-title">Judul Gambar</div>
+    <div class="card-subtitle">Keterangan</div>
+  </ion-card>
+
+  <ion-card>
+
+    <img src="assets/masjid.jpg"/>
+
+    <ion-card-content>
+      <ion-card-title>
+        Judul Gambar
+      </ion-card-title>
+      <p>
+        Di sini dapat diisi keterangan gambar. Keterangan gambar boleh lebih dari dua baris.
+      </p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger">
+          <ion-icon name='star'></ion-icon>
+           Favorite
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger">
+          <ion-icon name='musical-notes'></ion-icon>
+           Listen
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger">
+          <ion-icon name='share-alt'></ion-icon>
+           Share
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+</ion-content>
+
+

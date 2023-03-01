@@ -1,0 +1,36 @@
+<ion-header class='color-page' [style.background-color]="bgHeader()">
+  <ion-navbar>
+      <ion-title>Edit Warna</ion-title>
+      <ion-buttons start>
+        <button ion-button icon-only (click)="saveColor()">
+          <ion-icon name="checkmark"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      Komposisi Warna Merah
+      <ion-range min="0" max="255" [(ngModel)]="color.red" pin="true" color="dark">
+        <ion-icon range-left name="square" [style.color]="colorRedLeft()"></ion-icon>
+        <ion-icon range-right name="square" [style.color]="colorRedRight()"></ion-icon>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      Komposisi Warna Hijau
+      <ion-range min="0" max="255" [(ngModel)]="color.green" pin="true" color="dark">
+        <ion-icon range-left name="square" [style.color]="colorGreenLeft()"></ion-icon>
+        <ion-icon range-right name="square" [style.color]="colorGreenRight()"></ion-icon>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      Komposisi Warna Biru
+      <ion-range min="0" max="255" [(ngModel)]="color.blue" pin="true" color="dark">
+        <ion-icon range-left name="square" [style.color]="colorBlueLeft()"></ion-icon>
+        <ion-icon range-right name="square" [style.color]="colorBlueRight()"></ion-icon>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+</ion-content>

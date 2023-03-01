@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>SMS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>No. HP</ion-label>
+      <ion-input type="text" [(ngModel)]="nohp"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Pesan</ion-label>
+      <ion-textarea [(ngModel)]="pesan"></ion-textarea>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button (click)="sendSMS()">Kirim Pesan</button>
+  </div>
+
+</ion-content>
+

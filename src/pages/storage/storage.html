@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Data Anggota</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addForm()">
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let data of anggota; let i=index">
+        <ion-item>
+          <h2>{{data.nama}}</h2>
+          <p>{{data.alamat}}</p>
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="primary" (click)="editForm(i)">
+            <ion-icon name="create"></ion-icon> Edit
+          </button>
+          <button ion-button color="danger" (click)="deleteData(i)">
+            <ion-icon name="trash"></ion-icon> Hapus
+          </button>
+        </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
+

@@ -1,0 +1,63 @@
+.page-chat{
+  background: #aaa;
+
+  .chatbox{
+    background: none;
+    padding-left: 5px;
+    align-items: top;
+    -webkit-align-items: top;
+  }
+
+
+  .item-block{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .chatbox .label-md{
+    margin: 0;
+  }
+
+  .chatbox .buble{
+    margin: 5px;
+      width: auto;
+      padding: 3px 5px;
+      border-radius: 5px;
+      position: relative;
+      overflow: visible;
+      display: inline-block;
+      background: #fff;
+  }
+
+  .chatbox.left .buble{
+    margin-left: 10px;
+  }
+
+  .chatbox.right .buble{
+    float: right;
+    margin-right: 15px;
+    background: #9adcea;
+  }
+
+  .chatbox.left .buble:before{
+    content: '';
+    position: absolute;
+    border-top: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: -10px;
+    top: 0;
+    z-index: 10;
+  }
+
+  .chatbox.right .buble:before{
+    content: '';
+    position: absolute;
+    border-top: 10px solid #9adcea;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    right: -10px;
+    top: 0;
+    z-index: 10;
+  }
+}
